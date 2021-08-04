@@ -222,8 +222,13 @@ color:#d12e34 !important;
     .grad {
         display: none;
     }
+    .result {
+        margin-right: 7px;
+    }
     .download{
-        padding: 0;
+        padding: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .new{
         margin-left: auto;
@@ -232,6 +237,13 @@ color:#d12e34 !important;
 @media (max-width:770px){
     .box {
         flex-wrap: wrap;
+    }
+    .download{
+        margin-left: 0;
+        margin-right: 27px;
+    }
+    .result {
+        margin-right: 0;
     }
 }
 @media (max-width:500px){
@@ -250,8 +262,8 @@ color:#d12e34 !important;
     }
    
     .download {
-        cursor: pointer;
         padding: 0;
+        margin-right: 0;
         margin-bottom: 10px;
     }
     .list-item {
