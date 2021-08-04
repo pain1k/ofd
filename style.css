@@ -27,8 +27,8 @@ body {
 .box {
     align-items: center;
     justify-content: space-between;
+    /* width: 896px; */
     padding-right: 32px;
-    width: 896px;
     box-sizing: border-box;
     height: 96px;
     background: #fff;
@@ -117,7 +117,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 896px;
+    /* max-width: 896px; */
     height: 30px;
     background: #fff;
     border: 1px solid #f8f8f8;
@@ -138,7 +138,7 @@ body {
 .list {
     background: #fff;
     width: 100%;
-    max-width: 896px;
+    /* max-width: 896px; */
 }
 .list-item {
     border: 1px solid #f8f8f8;
@@ -164,19 +164,39 @@ margin-left: 4px !important;
 color:#d12e34 !important;
 }
 .download {
+    padding: 6px 16px;
+    width: 100%;
+    max-width: 120px;
     display: block;
-    background: #fff;
+    text-align: center;
     border:none;
     cursor: pointer;
+    background: linear-gradient(135deg, #B2C534 -0.01%, #8BC34A 99.99%);
+    box-shadow: 0px 2px 4px rgba(52, 123, 126, 0.15), inset 0px 1px 2px rgba(255, 255, 255, 0.4);
+}
+.download-renew {
+    background: linear-gradient(45deg, #F66223 0%, #EEAF41 100%);
+}
+.download-refused {
+    background: linear-gradient(45deg, #CA215F 0%, #D12E34 100%); 
 }
 .download:hover {
-    box-shadow: 0px 2px 4px rgba(52, 123, 126, 0.15), inset 0px 1px 2px rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
+}
+.download:active {
+    box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.1);
+}
+.download-link {
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
 }
 .new {
     margin-top: 32px;
     margin-bottom: 32px;
     display: block;
-    margin-left: calc(896px - 216px);
+    margin-left: calc(100% - 216px);
     width: 216px;
     height: 48px;
     font-size: 14px;
@@ -185,14 +205,19 @@ color:#d12e34 !important;
     background: #254E5F;
     border-radius: 2px;
     border: none;
+    box-shadow: 0px 2px 4px rgba(52, 123, 126, 0.15), inset 0px 1px 2px rgba(255, 255, 255, 0.4);
 }
 .new:hover {
-    box-shadow: 0px 2px 4px rgba(52, 123, 126, 0.15), inset 0px 1px 2px rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
+}
+.me-2 {
+    margin-right: 3px !important;
 }
 
 @media (max-width:990px){
     .box{
         width: 100%;
+        padding-right: 0;
     }
     .grad {
         display: none;
